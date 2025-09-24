@@ -44,9 +44,9 @@ public class patientTests {
     public void testTransactionMethods(){
         Patient patient = patientRepository.findByName("Ishita Verma");
 //        List<Patient> patientList = patientRepository.findByBirthDateOrEmail(LocalDate.of(1988, 12, 05), "priya.nair@example.com");
-        List<Patient> patientList = patientRepository.findByNameContaining("ta");
+//        List<Patient> patientList = patientRepository.findByNameContaining("ta");
 
         System.out.println(patient);
-        System.out.println(patientList);
+//        System.out.println(patientList);
     }
 }
