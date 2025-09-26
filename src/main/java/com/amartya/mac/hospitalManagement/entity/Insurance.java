@@ -2,10 +2,7 @@ package com.amartya.mac.hospitalManagement.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.cglib.core.Local;
 
@@ -15,6 +12,7 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Insurance {
@@ -26,7 +24,7 @@ public class Insurance {
     private String policyNumber;
 
     @Column(nullable = false, length = 100)
-    private String Provider;
+    private String provider;
 
     @Column(nullable = false)
     private LocalDate validUntil;
