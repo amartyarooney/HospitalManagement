@@ -29,9 +29,11 @@ public class Appointment {
 
     @ManyToOne
     @JoinColumn(name = "patient_id", nullable = false) //owning side
+    @ToString.Exclude
     private Patient patient;
 
     @ManyToOne
     @JoinColumn( nullable = false)
+    @ToString.Exclude
     private Doctor doctor;
 }

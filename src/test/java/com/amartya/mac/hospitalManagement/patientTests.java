@@ -21,7 +21,7 @@ public class patientTests {
     private PatientRepository patientRepository;
     @Test
     public void testPatientRepository(){
-        List<Patient> patientList = patientRepository.findAll();
+        List<Patient> patientList = patientRepository.findAllPatientWithAppointment();
         System.out.println(patientList);
     }
 //
@@ -40,13 +40,15 @@ public class patientTests {
 //
 //    }
 
-    @Test
-    public void testTransactionMethods(){
-        Patient patient = patientRepository.findByName("Ishita Verma");
-//        List<Patient> patientList = patientRepository.findByBirthDateOrEmail(LocalDate.of(1988, 12, 05), "priya.nair@example.com");
-//        List<Patient> patientList = patientRepository.findByNameContaining("ta");
-
-        System.out.println(patient);
-//        System.out.println(patientList);
-    }
+//    @Test
+//    public void testTransactionMethods(){
+//        Patient patient = patientRepository.findByName("Ishita Verma");
+////        List<Patient> patientList = patientRepository.findByBirthDateOrEmail(LocalDate.of(1988, 12, 05), "priya.nair@example.com");
+////        List<Patient> patientList = patientRepository.findByNameContaining("ta");
+//
+//        System.out.println(patient);
+////        System.out.println(patientList);
+//    }
 }
+
+
